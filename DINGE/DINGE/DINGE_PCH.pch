@@ -1,0 +1,38 @@
+//
+//  DINGE_PCH.pch
+//  DINGE
+//
+//  Created by chocklee on 2016/11/15.
+//  Copyright © 2016年 chocklee. All rights reserved.
+//
+
+#ifndef DINGE_PCH_pch
+#define DINGE_PCH_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define SCREENBOUNDS [UIScreen mainScreen].bounds
+#define SCREENWIDTH SCREENBOUNDS.size.width
+#define SCREENHEIGHT SCREENBOUNDS.size.height
+
+#define RealWidth(value) ((value) / 375.0f * [UIScreen mainScreen].bounds.size.width)
+#define RealHeight(value) ((value) / 667.0f * [UIScreen mainScreen].bounds.size.height)
+#define RealFont(value) ((value) * (([UIScreen mainScreen].bounds.size.height * [UIScreen mainScreen].bounds.size.width) / (667.0f * 375.0f)))
+
+// weakSelf
+#define WeakSelf(weakSelf) __weak typeof(self) weakSelf = self;
+
+// NSUserDefaults
+#define UserDefaults(userDefaults) NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+
+// Documents Path
+#define DOCUMENTSPATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
+
+#import <YYKit.h>
+
+#import "Const.h"
+
+#import <SDAutoLayout.h>
+
+#endif /* DINGE_PCH_pch */

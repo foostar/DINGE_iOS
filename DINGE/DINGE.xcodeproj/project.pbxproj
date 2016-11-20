@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2484601440C8ABD66677E0B6 /* libPods-DINGE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E960C773BB13E7F1EB1DE7 /* libPods-DINGE.a */; };
+		91C7010A9FDA7F3AAB6A5DDD /* libPods-DINGEUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E156B1896BFE26141A00D1DF /* libPods-DINGEUITests.a */; };
+		DB0403EA97B9F4DBC7E7418A /* libPods-DINGETests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B1584CDE9F96CE48DA81A5 /* libPods-DINGETests.a */; };
+		E3523C351DDDD8CD00CBED52 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3523C321DDDD8CD00CBED52 /* Message.storyboard */; };
+		E3523C381DDDD8FB00CBED52 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3523C371DDDD8FB00CBED52 /* MessageCell.m */; };
+		E3523C401DDDE23B00CBED52 /* MessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3523C3F1DDDE23B00CBED52 /* MessageController.m */; };
 		E379FDDC1DDB3C2D001ECB10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E379FDDB1DDB3C2D001ECB10 /* main.m */; };
 		E379FDDF1DDB3C2D001ECB10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E379FDDE1DDB3C2D001ECB10 /* AppDelegate.m */; };
-		E379FDE21DDB3C2D001ECB10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E379FDE11DDB3C2D001ECB10 /* ViewController.m */; };
 		E379FDE51DDB3C2D001ECB10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E379FDE31DDB3C2D001ECB10 /* Main.storyboard */; };
 		E379FDE71DDB3C2D001ECB10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E379FDE61DDB3C2D001ECB10 /* Assets.xcassets */; };
 		E379FDEA1DDB3C2D001ECB10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E379FDE81DDB3C2D001ECB10 /* LaunchScreen.storyboard */; };
 		E379FDF51DDB3C2D001ECB10 /* DINGETests.m in Sources */ = {isa = PBXBuildFile; fileRef = E379FDF41DDB3C2D001ECB10 /* DINGETests.m */; };
 		E379FE001DDB3C2D001ECB10 /* DINGEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E379FDFF1DDB3C2D001ECB10 /* DINGEUITests.m */; };
+		E379FE251DDB51F7001ECB10 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E379FE241DDB51F7001ECB10 /* Discover.storyboard */; };
+		E379FE271DDB5228001ECB10 /* Discuss.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E379FE261DDB5228001ECB10 /* Discuss.storyboard */; };
+		E379FE2B1DDB5282001ECB10 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E379FE2A1DDB5282001ECB10 /* Me.storyboard */; };
+		E39C86601DE1775600C9A115 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39C865E1DE1775600C9A115 /* HomePage.storyboard */; };
+		E39C86631DE177BB00C9A115 /* HomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39C86621DE177BB00C9A115 /* HomePageController.m */; };
+		E39C866B1DE19F2400C9A115 /* HPCarouselModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E39C866A1DE19F2400C9A115 /* HPCarouselModel.m */; };
+		E39C866E1DE1A39400C9A115 /* HomePageRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E39C866D1DE1A39400C9A115 /* HomePageRightCell.m */; };
+		E39C86711DE1A3A500C9A115 /* HomePageLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E39C86701DE1A3A500C9A115 /* HomePageLeftCell.m */; };
+		E39C86771DE1A9C000C9A115 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39C86741DE1A9C000C9A115 /* BaseNavigationController.m */; };
+		E39C86781DE1A9C000C9A115 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39C86761DE1A9C000C9A115 /* BaseTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +50,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		345C8B2E15BBCC14C83091DC /* Pods-DINGE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINGE.release.xcconfig"; path = "Pods/Target Support Files/Pods-DINGE/Pods-DINGE.release.xcconfig"; sourceTree = "<group>"; };
+		41500BE2FAD887280BA8E768 /* Pods-DINGETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINGETests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DINGETests/Pods-DINGETests.release.xcconfig"; sourceTree = "<group>"; };
+		49E01C0CCF41A7709BB37189 /* Pods-DINGETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINGETests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DINGETests/Pods-DINGETests.debug.xcconfig"; sourceTree = "<group>"; };
+		66E960C773BB13E7F1EB1DE7 /* libPods-DINGE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DINGE.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7818E0514D423DB6FDFDEE87 /* Pods-DINGEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINGEUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DINGEUITests/Pods-DINGEUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		96B1584CDE9F96CE48DA81A5 /* libPods-DINGETests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DINGETests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D449E314B62DD7402AFF8A3C /* Pods-DINGE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINGE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DINGE/Pods-DINGE.debug.xcconfig"; sourceTree = "<group>"; };
+		DBCC27242B1C3158DE653320 /* Pods-DINGEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINGEUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DINGEUITests/Pods-DINGEUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E156B1896BFE26141A00D1DF /* libPods-DINGEUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DINGEUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E32C8DE41DDC813300C8B824 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		E3523C321DDDD8CD00CBED52 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		E3523C361DDDD8FB00CBED52 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		E3523C371DDDD8FB00CBED52 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		E3523C3E1DDDE23B00CBED52 /* MessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageController.h; sourceTree = "<group>"; };
+		E3523C3F1DDDE23B00CBED52 /* MessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageController.m; sourceTree = "<group>"; };
 		E379FDD71DDB3C2D001ECB10 /* DINGE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DINGE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E379FDDB1DDB3C2D001ECB10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E379FDDD1DDB3C2D001ECB10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E379FDDE1DDB3C2D001ECB10 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E379FDE01DDB3C2D001ECB10 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E379FDE11DDB3C2D001ECB10 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E379FDE41DDB3C2D001ECB10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E379FDE61DDB3C2D001ECB10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E379FDE91DDB3C2D001ECB10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +79,23 @@
 		E379FDFB1DDB3C2D001ECB10 /* DINGEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DINGEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E379FDFF1DDB3C2D001ECB10 /* DINGEUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DINGEUITests.m; sourceTree = "<group>"; };
 		E379FE011DDB3C2D001ECB10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E379FE171DDB4423001ECB10 /* DINGE_PCH.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DINGE_PCH.pch; sourceTree = "<group>"; };
+		E379FE241DDB51F7001ECB10 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		E379FE261DDB5228001ECB10 /* Discuss.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discuss.storyboard; sourceTree = "<group>"; };
+		E379FE2A1DDB5282001ECB10 /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
+		E39C865E1DE1775600C9A115 /* HomePage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
+		E39C86611DE177BB00C9A115 /* HomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageController.h; sourceTree = "<group>"; };
+		E39C86621DE177BB00C9A115 /* HomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageController.m; sourceTree = "<group>"; };
+		E39C86691DE19F2400C9A115 /* HPCarouselModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCarouselModel.h; sourceTree = "<group>"; };
+		E39C866A1DE19F2400C9A115 /* HPCarouselModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCarouselModel.m; sourceTree = "<group>"; };
+		E39C866C1DE1A39400C9A115 /* HomePageRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageRightCell.h; sourceTree = "<group>"; };
+		E39C866D1DE1A39400C9A115 /* HomePageRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageRightCell.m; sourceTree = "<group>"; };
+		E39C866F1DE1A3A500C9A115 /* HomePageLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageLeftCell.h; sourceTree = "<group>"; };
+		E39C86701DE1A3A500C9A115 /* HomePageLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageLeftCell.m; sourceTree = "<group>"; };
+		E39C86731DE1A9C000C9A115 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		E39C86741DE1A9C000C9A115 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		E39C86751DE1A9C000C9A115 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		E39C86761DE1A9C000C9A115 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2484601440C8ABD66677E0B6 /* libPods-DINGE.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB0403EA97B9F4DBC7E7418A /* libPods-DINGETests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +119,85 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91C7010A9FDA7F3AAB6A5DDD /* libPods-DINGEUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12111E5D62DB8855E095BBAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D449E314B62DD7402AFF8A3C /* Pods-DINGE.debug.xcconfig */,
+				345C8B2E15BBCC14C83091DC /* Pods-DINGE.release.xcconfig */,
+				49E01C0CCF41A7709BB37189 /* Pods-DINGETests.debug.xcconfig */,
+				41500BE2FAD887280BA8E768 /* Pods-DINGETests.release.xcconfig */,
+				7818E0514D423DB6FDFDEE87 /* Pods-DINGEUITests.debug.xcconfig */,
+				DBCC27242B1C3158DE653320 /* Pods-DINGEUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A162B01A8F3A2BD474D83F1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66E960C773BB13E7F1EB1DE7 /* libPods-DINGE.a */,
+				96B1584CDE9F96CE48DA81A5 /* libPods-DINGETests.a */,
+				E156B1896BFE26141A00D1DF /* libPods-DINGEUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E32C8DDF1DDC783500C8B824 /* Other(其他) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other(其他)";
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E3523C2D1DDDD8CD00CBED52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3523C3E1DDDE23B00CBED52 /* MessageController.h */,
+				E3523C3F1DDDE23B00CBED52 /* MessageController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E3523C301DDDD8CD00CBED52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3523C311DDDD8CD00CBED52 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E3523C321DDDD8CD00CBED52 /* Message.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E3523C331DDDD8CD00CBED52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3523C361DDDD8FB00CBED52 /* MessageCell.h */,
+				E3523C371DDDD8FB00CBED52 /* MessageCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E3523C441DDDEE2500CBED52 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E39C86721DE1A9C000C9A115 /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		E379FDCE1DDB3C2D001ECB10 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +205,8 @@
 				E379FDF31DDB3C2D001ECB10 /* DINGETests */,
 				E379FDFE1DDB3C2D001ECB10 /* DINGEUITests */,
 				E379FDD81DDB3C2D001ECB10 /* Products */,
+				12111E5D62DB8855E095BBAD /* Pods */,
+				A162B01A8F3A2BD474D83F1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,12 +225,12 @@
 			children = (
 				E379FDDD1DDB3C2D001ECB10 /* AppDelegate.h */,
 				E379FDDE1DDB3C2D001ECB10 /* AppDelegate.m */,
-				E379FDE01DDB3C2D001ECB10 /* ViewController.h */,
-				E379FDE11DDB3C2D001ECB10 /* ViewController.m */,
 				E379FDE31DDB3C2D001ECB10 /* Main.storyboard */,
 				E379FDE61DDB3C2D001ECB10 /* Assets.xcassets */,
 				E379FDE81DDB3C2D001ECB10 /* LaunchScreen.storyboard */,
 				E379FDEB1DDB3C2D001ECB10 /* Info.plist */,
+				E379FE171DDB4423001ECB10 /* DINGE_PCH.pch */,
+				E379FE0D1DDB404D001ECB10 /* Classes */,
 				E379FDDA1DDB3C2D001ECB10 /* Supporting Files */,
 			);
 			path = DINGE;
@@ -140,6 +262,152 @@
 			path = DINGEUITests;
 			sourceTree = "<group>";
 		};
+		E379FE0D1DDB404D001ECB10 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E379FE0F1DDB404D001ECB10 /* Main */,
+				E379FE0E1DDB404D001ECB10 /* Expand */,
+				E379FE151DDB404D001ECB10 /* Resource */,
+				E379FE161DDB404D001ECB10 /* Vender */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E379FE0E1DDB404D001ECB10 /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				E32C8DE41DDC813300C8B824 /* Const.h */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		E379FE0F1DDB404D001ECB10 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E3523C441DDDEE2500CBED52 /* Base */,
+				E32C8DDF1DDC783500C8B824 /* Other(其他) */,
+				E379FE121DDB404D001ECB10 /* HomePage(首页) */,
+				E379FE101DDB404D001ECB10 /* Discover(发现) */,
+				E379FE111DDB404D001ECB10 /* Discuss(讨论) */,
+				E379FE141DDB404D001ECB10 /* Message(消息) */,
+				E379FE131DDB404D001ECB10 /* Me(我的) */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E379FE101DDB404D001ECB10 /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				E379FE241DDB51F7001ECB10 /* Discover.storyboard */,
+			);
+			name = "Discover(发现)";
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		E379FE111DDB404D001ECB10 /* Discuss(讨论) */ = {
+			isa = PBXGroup;
+			children = (
+				E379FE261DDB5228001ECB10 /* Discuss.storyboard */,
+			);
+			name = "Discuss(讨论)";
+			path = Discuss;
+			sourceTree = "<group>";
+		};
+		E379FE121DDB404D001ECB10 /* HomePage(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				E39C865B1DE1775600C9A115 /* Controller */,
+				E39C865C1DE1775600C9A115 /* Model */,
+				E39C865F1DE1775600C9A115 /* View */,
+				E39C865D1DE1775600C9A115 /* Other */,
+			);
+			name = "HomePage(首页)";
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		E379FE131DDB404D001ECB10 /* Me(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				E379FE2A1DDB5282001ECB10 /* Me.storyboard */,
+			);
+			name = "Me(我的)";
+			path = Me;
+			sourceTree = "<group>";
+		};
+		E379FE141DDB404D001ECB10 /* Message(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				E3523C2D1DDDD8CD00CBED52 /* Controller */,
+				E3523C301DDDD8CD00CBED52 /* Model */,
+				E3523C331DDDD8CD00CBED52 /* View */,
+				E3523C311DDDD8CD00CBED52 /* Other */,
+			);
+			name = "Message(消息)";
+			path = Message;
+			sourceTree = "<group>";
+		};
+		E379FE151DDB404D001ECB10 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		E379FE161DDB404D001ECB10 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		E39C865B1DE1775600C9A115 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E39C86611DE177BB00C9A115 /* HomePageController.h */,
+				E39C86621DE177BB00C9A115 /* HomePageController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E39C865C1DE1775600C9A115 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E39C86691DE19F2400C9A115 /* HPCarouselModel.h */,
+				E39C866A1DE19F2400C9A115 /* HPCarouselModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E39C865D1DE1775600C9A115 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E39C865E1DE1775600C9A115 /* HomePage.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E39C865F1DE1775600C9A115 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E39C866C1DE1A39400C9A115 /* HomePageRightCell.h */,
+				E39C866D1DE1A39400C9A115 /* HomePageRightCell.m */,
+				E39C866F1DE1A3A500C9A115 /* HomePageLeftCell.h */,
+				E39C86701DE1A3A500C9A115 /* HomePageLeftCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E39C86721DE1A9C000C9A115 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E39C86731DE1A9C000C9A115 /* BaseNavigationController.h */,
+				E39C86741DE1A9C000C9A115 /* BaseNavigationController.m */,
+				E39C86751DE1A9C000C9A115 /* BaseTabBarController.h */,
+				E39C86761DE1A9C000C9A115 /* BaseTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +415,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E379FE041DDB3C2D001ECB10 /* Build configuration list for PBXNativeTarget "DINGE" */;
 			buildPhases = (
+				5488E0D6555F86F9F82CE472 /* [CP] Check Pods Manifest.lock */,
 				E379FDD31DDB3C2D001ECB10 /* Sources */,
 				E379FDD41DDB3C2D001ECB10 /* Frameworks */,
 				E379FDD51DDB3C2D001ECB10 /* Resources */,
+				4E7C1D77CEC8C3923BE5BED9 /* [CP] Embed Pods Frameworks */,
+				50A584FC767896AD2BD328E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +435,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E379FE071DDB3C2D001ECB10 /* Build configuration list for PBXNativeTarget "DINGETests" */;
 			buildPhases = (
+				DE63F5BA97027EDA48407086 /* [CP] Check Pods Manifest.lock */,
 				E379FDEC1DDB3C2D001ECB10 /* Sources */,
 				E379FDED1DDB3C2D001ECB10 /* Frameworks */,
 				E379FDEE1DDB3C2D001ECB10 /* Resources */,
+				8932B1F70F35A478E3416566 /* [CP] Embed Pods Frameworks */,
+				90CF7940623799A000A9BFEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +456,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E379FE0A1DDB3C2D001ECB10 /* Build configuration list for PBXNativeTarget "DINGEUITests" */;
 			buildPhases = (
+				ECABBA8531E6191A457C9A5D /* [CP] Check Pods Manifest.lock */,
 				E379FDF71DDB3C2D001ECB10 /* Sources */,
 				E379FDF81DDB3C2D001ECB10 /* Frameworks */,
 				E379FDF91DDB3C2D001ECB10 /* Resources */,
+				375BA56EA89B81CE82C8D8FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,9 +525,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E39C86601DE1775600C9A115 /* HomePage.storyboard in Resources */,
 				E379FDEA1DDB3C2D001ECB10 /* LaunchScreen.storyboard in Resources */,
+				E379FE251DDB51F7001ECB10 /* Discover.storyboard in Resources */,
+				E379FE271DDB5228001ECB10 /* Discuss.storyboard in Resources */,
 				E379FDE71DDB3C2D001ECB10 /* Assets.xcassets in Resources */,
 				E379FDE51DDB3C2D001ECB10 /* Main.storyboard in Resources */,
+				E3523C351DDDD8CD00CBED52 /* Message.storyboard in Resources */,
+				E379FE2B1DDB5282001ECB10 /* Me.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,14 +552,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		375BA56EA89B81CE82C8D8FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINGEUITests/Pods-DINGEUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E7C1D77CEC8C3923BE5BED9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINGE/Pods-DINGE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50A584FC767896AD2BD328E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINGE/Pods-DINGE-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5488E0D6555F86F9F82CE472 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8932B1F70F35A478E3416566 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINGETests/Pods-DINGETests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90CF7940623799A000A9BFEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DINGETests/Pods-DINGETests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE63F5BA97027EDA48407086 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ECABBA8531E6191A457C9A5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E379FDD31DDB3C2D001ECB10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E379FDE21DDB3C2D001ECB10 /* ViewController.m in Sources */,
+				E39C86781DE1A9C000C9A115 /* BaseTabBarController.m in Sources */,
+				E39C86631DE177BB00C9A115 /* HomePageController.m in Sources */,
 				E379FDDF1DDB3C2D001ECB10 /* AppDelegate.m in Sources */,
+				E39C86711DE1A3A500C9A115 /* HomePageLeftCell.m in Sources */,
+				E3523C381DDDD8FB00CBED52 /* MessageCell.m in Sources */,
+				E39C866E1DE1A39400C9A115 /* HomePageRightCell.m in Sources */,
+				E39C86771DE1A9C000C9A115 /* BaseNavigationController.m in Sources */,
 				E379FDDC1DDB3C2D001ECB10 /* main.m in Sources */,
+				E3523C401DDDE23B00CBED52 /* MessageController.m in Sources */,
+				E39C866B1DE19F2400C9A115 /* HPCarouselModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,9 +834,11 @@
 		};
 		E379FE051DDB3C2D001ECB10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D449E314B62DD7402AFF8A3C /* Pods-DINGE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WDDBSC2C6T;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DINGE/DINGE_PCH.pch";
 				INFOPLIST_FILE = DINGE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chock.DINGE;
@@ -435,9 +848,11 @@
 		};
 		E379FE061DDB3C2D001ECB10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 345C8B2E15BBCC14C83091DC /* Pods-DINGE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WDDBSC2C6T;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DINGE/DINGE_PCH.pch";
 				INFOPLIST_FILE = DINGE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chock.DINGE;
@@ -447,6 +862,7 @@
 		};
 		E379FE081DDB3C2D001ECB10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49E01C0CCF41A7709BB37189 /* Pods-DINGETests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = WDDBSC2C6T;
@@ -460,6 +876,7 @@
 		};
 		E379FE091DDB3C2D001ECB10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41500BE2FAD887280BA8E768 /* Pods-DINGETests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = WDDBSC2C6T;
@@ -473,6 +890,7 @@
 		};
 		E379FE0B1DDB3C2D001ECB10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7818E0514D423DB6FDFDEE87 /* Pods-DINGEUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = WDDBSC2C6T;
 				INFOPLIST_FILE = DINGEUITests/Info.plist;
@@ -485,6 +903,7 @@
 		};
 		E379FE0C1DDB3C2D001ECB10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBCC27242B1C3158DE653320 /* Pods-DINGEUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = WDDBSC2C6T;
 				INFOPLIST_FILE = DINGEUITests/Info.plist;
@@ -514,6 +933,7 @@
 				E379FE061DDB3C2D001ECB10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E379FE071DDB3C2D001ECB10 /* Build configuration list for PBXNativeTarget "DINGETests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +942,7 @@
 				E379FE091DDB3C2D001ECB10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E379FE0A1DDB3C2D001ECB10 /* Build configuration list for PBXNativeTarget "DINGEUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +951,7 @@
 				E379FE0C1DDB3C2D001ECB10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
