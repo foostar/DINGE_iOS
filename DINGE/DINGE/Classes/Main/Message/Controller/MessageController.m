@@ -8,6 +8,7 @@
 
 #import "MessageController.h"
 #import "MessageCell.h"
+#import "UITabBar+Badge.h"
 
 @interface MessageController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -27,6 +28,11 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     _tableView.tableFooterView = [[UIView alloc] init];
+    
+    // 如果有新消息显示
+//    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:1 inSection:0];
+//    MessageCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+//    cell.redPoint.hidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,7 +56,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return self.dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -61,7 +67,6 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "BaseTabBarController.h"
+#import "UITabBar+Badge.h"
 
 @interface BaseTabBarController ()
 
@@ -28,6 +29,13 @@
     self.tabBar.layer.shadowOffset = CGSizeMake(0.0f , -1.0f);
     self.tabBar.layer.shadowRadius = 2.5f;
     self.tabBar.layer.shadowOpacity = 0.33f;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // 如果有新消息显示
+    // 给消息页面的TabbarItem添加小红点
+//    [self.tabBar showBadgeOnItemIndex:3];
 }
 
 - (void)didReceiveMemoryWarning {

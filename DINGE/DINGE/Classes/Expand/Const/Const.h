@@ -15,9 +15,13 @@
 #define TabBarNormalColor @"adb3bf"
 #define TabBarSelectedColor @"56637b"
 #define ShadowsColor @"d7d4c7"
+#define BadgeColor @"b61010"
 
 // fonts
 #define NavTitleFont @"PingFangSC-Medium"
 #define NavTitleFontNumber 14
+
+// TagValue
+#define TabBarBadgeTag 1000
 
 #endif /* Const_h */

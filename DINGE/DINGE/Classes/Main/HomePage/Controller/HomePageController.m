@@ -9,8 +9,11 @@
 #import "HomePageController.h"
 #import "HomePageLeftCell.h"
 #import "HomePageRightCell.h"
-#import "BaseNavigationController.h"
 #import <SDCycleScrollView.h>
+// 轮播图模型
+#import "HPCarouselModel.h"
+// cell模型
+#import "HPCellModel.h"
 
 static CGFloat const HeaderViewHeight = 230;
 
@@ -22,6 +25,8 @@ static CGFloat const HeaderViewHeight = 230;
 
 @property (strong, nonatomic) SDCycleScrollView *headerView;
 
+@property (strong, nonatomic) UILabel *navTitleLabel;
+
 @end
 
 @implementation HomePageController
@@ -30,6 +35,9 @@ static CGFloat const HeaderViewHeight = 230;
     [super viewDidLoad];
     
     self.navBarBgImageView.alpha = 0;
+    self.navigationItem.titleView = self.navTitleLabel;
+    _navTitleLabel.hidden = YES;
+    _navTitleLabel.alpha = 0;
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
@@ -47,6 +55,18 @@ static CGFloat const HeaderViewHeight = 230;
         _navBarBgImageView = self.navigationController.navigationBar.subviews.firstObject;
     }
     return _navBarBgImageView;
+}
+
+- (UILabel *)navTitleLabel {
+    if (!_navTitleLabel) {
+        _navTitleLabel = [[UILabel alloc] init];
+        _navTitleLabel.text = @"首页";
+        _navTitleLabel.textColor = [UIColor colorWithHexString:NavTitleColor];
+        _navTitleLabel.font = [UIFont fontWithName:NavTitleFont size:NavTitleFontNumber];
+        _navTitleLabel.textAlignment = NSTextAlignmentCenter;
+        [_navTitleLabel sizeToFit];
+    }
+    return _navTitleLabel;
 }
 
 - (SDCycleScrollView *)headerView {
@@ -83,18 +103,20 @@ static CGFloat const HeaderViewHeight = 230;
     }
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+}
+
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat minAlphaOffset = 0;
     CGFloat maxAlphaOffset = RealHeight(HeaderViewHeight) - 64;
     CGFloat offset = scrollView.contentOffset.y;
+    if (offset > 0) {
+        _navTitleLabel.hidden = NO;
+    }
     CGFloat alpha = (offset - minAlphaOffset) / (maxAlphaOffset - minAlphaOffset);
     _navBarBgImageView.alpha = alpha;
-    if (alpha > 1.0f) {
-        self.navigationItem.title = @"首页";
-    } else {
-        self.navigationItem.title = nil;
-    }
+    _navTitleLabel.alpha = alpha;
 }
 
 #pragma mark - SDCycleScrollViewDelegate 

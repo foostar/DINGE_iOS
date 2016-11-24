@@ -16,9 +16,10 @@
 #define SCREENWIDTH SCREENBOUNDS.size.width
 #define SCREENHEIGHT SCREENBOUNDS.size.height
 
-#define RealWidth(value) ((value) / 375.0f * [UIScreen mainScreen].bounds.size.width)
-#define RealHeight(value) ((value) / 667.0f * [UIScreen mainScreen].bounds.size.height)
-#define RealFont(value) ((value) * (([UIScreen mainScreen].bounds.size.height * [UIScreen mainScreen].bounds.size.width) / (667.0f * 375.0f)))
+// 5S尺寸适配
+#define RealWidth(value) ((value) / 320.0f * [UIScreen mainScreen].bounds.size.width)
+#define RealHeight(value) ((value) / 568.0f * [UIScreen mainScreen].bounds.size.height)
+#define RealFont(value) ((value) * (([UIScreen mainScreen].bounds.size.height * [UIScreen mainScreen].bounds.size.width) / (568.0f * 320.0f)))
 
 // weakSelf
 #define WeakSelf(weakSelf) __weak typeof(self) weakSelf = self;
@@ -34,5 +35,8 @@
 #import "Const.h"
 
 #import <SDAutoLayout.h>
+
+// 模型测试工具类
+#import "ModelTest.h"
 
 #endif /* DINGE_PCH_pch */

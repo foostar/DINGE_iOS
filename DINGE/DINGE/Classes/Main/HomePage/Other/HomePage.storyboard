@@ -37,7 +37,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r18-hJ-3hX">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r18-hJ-3hX">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" red="0.99215686274509807" green="0.9882352941176471" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.64313725490196072" green="0.64313725490196072" blue="0.64313725490196072" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -47,7 +47,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jcq-EO-dfe" id="uOI-hD-yeh">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fL5-OZ-fHZ">
@@ -156,12 +156,22 @@
                                                 <constraint firstItem="rVN-18-SYT" firstAttribute="leading" secondItem="Yie-JM-Kmn" secondAttribute="trailing" constant="4" id="v0v-OF-DJd"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="createTimeLabel" destination="lDx-4W-Inb" id="W28-uM-r4H"/>
+                                            <outlet property="movieImageView" destination="fL5-OZ-fHZ" id="bAL-Le-5W3"/>
+                                            <outlet property="nicknameLabel" destination="tFz-tI-e6I" id="bJ5-sA-gG4"/>
+                                            <outlet property="readNumberLabel" destination="rVN-18-SYT" id="Nih-2Q-DFK"/>
+                                            <outlet property="replyNumberLabel" destination="Ug6-9V-oXG" id="Hza-hg-dr3"/>
+                                            <outlet property="starNumberLabel" destination="2Dz-KL-I0N" id="uKA-2Q-jYP"/>
+                                            <outlet property="titleLabel" destination="pKG-Oe-4I8" id="1sE-vI-SGa"/>
+                                            <outlet property="userAvatarView" destination="XBo-BO-hpK" id="rVc-7X-uPd"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomePageRightCell" id="Q1b-a3-6kr" customClass="HomePageRightCell">
                                         <rect key="frame" x="0.0" y="168" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q1b-a3-6kr" id="Vx4-0W-KHO">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ilw-B1-6wy">
@@ -270,6 +280,16 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.99215686270000003" green="0.98823529409999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="createTimeLabel" destination="wnY-hJ-cXS" id="ag2-eN-dtH"/>
+                                            <outlet property="movieImageView" destination="ilw-B1-6wy" id="D5K-6W-EEO"/>
+                                            <outlet property="nicknameLabel" destination="Ji5-AG-2Ta" id="w5M-j3-Wu7"/>
+                                            <outlet property="readNumberLabel" destination="iL6-vo-iOM" id="P05-sD-joM"/>
+                                            <outlet property="replyNumberLabel" destination="MaF-t7-9oR" id="BVb-PL-vZr"/>
+                                            <outlet property="starNumberLabel" destination="VxS-oA-hMo" id="Ahw-h4-Yc4"/>
+                                            <outlet property="titleLabel" destination="xDe-11-guq" id="peu-xG-jGn"/>
+                                            <outlet property="userAvatarView" destination="Kxs-Eo-uVQ" id="22p-ZD-5bV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -297,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m9m-U7-sjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1182" y="265"/>
+            <point key="canvasLocation" x="-1183.2" y="264.91754122938534"/>
         </scene>
     </scenes>
     <resources>

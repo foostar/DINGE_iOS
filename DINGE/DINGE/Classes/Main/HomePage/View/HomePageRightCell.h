@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class HPCellModel;
 @interface HomePageRightCell : UITableViewCell
+
+@property (strong, nonatomic) HPCellModel *cellModel;
 
 @end
