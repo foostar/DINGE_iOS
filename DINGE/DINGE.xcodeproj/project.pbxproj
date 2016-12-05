@@ -10,6 +10,19 @@
 		2484601440C8ABD66677E0B6 /* libPods-DINGE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E960C773BB13E7F1EB1DE7 /* libPods-DINGE.a */; };
 		91C7010A9FDA7F3AAB6A5DDD /* libPods-DINGEUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E156B1896BFE26141A00D1DF /* libPods-DINGEUITests.a */; };
 		DB0403EA97B9F4DBC7E7418A /* libPods-DINGETests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B1584CDE9F96CE48DA81A5 /* libPods-DINGETests.a */; };
+		E31D25351DED678800F702EE /* MessageCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D25341DED678800F702EE /* MessageCommentController.m */; };
+		E31D25381DED6A9800F702EE /* MessageCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D25371DED6A9800F702EE /* MessageCommentCell.m */; };
+		E31D253B1DED70AC00F702EE /* MessageLikeController.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D253A1DED70AC00F702EE /* MessageLikeController.m */; };
+		E31D253E1DED70CE00F702EE /* MessageMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D253D1DED70CE00F702EE /* MessageMessageController.m */; };
+		E31D25411DED739200F702EE /* MessageLikeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D25401DED739200F702EE /* MessageLikeCell.m */; };
+		E31D25441DEDA2B400F702EE /* MeWriteController.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D25431DEDA2B400F702EE /* MeWriteController.m */; };
+		E31D25471DEDA2C000F702EE /* MeFollowedController.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D25461DEDA2C000F702EE /* MeFollowedController.m */; };
+		E31D254A1DEDA2D500F702EE /* MeCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D25491DEDA2D500F702EE /* MeCollectionController.m */; };
+		E31D254D1DEDA2E500F702EE /* MeHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D254C1DEDA2E500F702EE /* MeHistoryController.m */; };
+		E31D25501DEDA30200F702EE /* MeDraftController.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D254F1DEDA30200F702EE /* MeDraftController.m */; };
+		E31D25531DEDA31900F702EE /* MeSetController.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D25521DEDA31900F702EE /* MeSetController.m */; };
+		E31D25561DEDA5DF00F702EE /* MeNightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D25551DEDA5DF00F702EE /* MeNightCell.m */; };
+		E3272B5B1DE6B7F600C4971D /* MeEditInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3272B5A1DE6B7F600C4971D /* MeEditInfoController.m */; };
 		E3523C351DDDD8CD00CBED52 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3523C321DDDD8CD00CBED52 /* Message.storyboard */; };
 		E3523C381DDDD8FB00CBED52 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3523C371DDDD8FB00CBED52 /* MessageCell.m */; };
 		E3523C401DDDE23B00CBED52 /* MessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3523C3F1DDDE23B00CBED52 /* MessageController.m */; };
@@ -73,6 +86,11 @@
 		E3E2182F1DE488A000924DD4 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E2182D1DE488A000924DD4 /* Discover.storyboard */; };
 		E3E218321DE48BB700924DD4 /* DiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E218311DE48BB700924DD4 /* DiscoverController.m */; };
 		E3E218371DE4972500924DD4 /* DiscoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E218361DE4972500924DD4 /* DiscoverCell.m */; };
+		E3E2C9041DE6E07100543412 /* MeEditInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E2C9031DE6E07100543412 /* MeEditInfoCell.m */; };
+		E3E2C9091DE6E37200543412 /* MeEditInfoSignCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E2C9081DE6E37200543412 /* MeEditInfoSignCell.m */; };
+		E3E2C90C1DE6EA5400543412 /* MeEditInfoNickNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E2C90B1DE6EA5400543412 /* MeEditInfoNickNameCell.m */; };
+		E3E2C9131DE72B7500543412 /* MessageFansController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E2C9121DE72B7500543412 /* MessageFansController.m */; };
+		E3E2C9161DE72E6E00543412 /* MessageFansCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E2C9151DE72E6E00543412 /* MessageFansCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +120,32 @@
 		D449E314B62DD7402AFF8A3C /* Pods-DINGE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINGE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DINGE/Pods-DINGE.debug.xcconfig"; sourceTree = "<group>"; };
 		DBCC27242B1C3158DE653320 /* Pods-DINGEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DINGEUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DINGEUITests/Pods-DINGEUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E156B1896BFE26141A00D1DF /* libPods-DINGEUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DINGEUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E31D25331DED678800F702EE /* MessageCommentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCommentController.h; sourceTree = "<group>"; };
+		E31D25341DED678800F702EE /* MessageCommentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCommentController.m; sourceTree = "<group>"; };
+		E31D25361DED6A9800F702EE /* MessageCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCommentCell.h; sourceTree = "<group>"; };
+		E31D25371DED6A9800F702EE /* MessageCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCommentCell.m; sourceTree = "<group>"; };
+		E31D25391DED70AC00F702EE /* MessageLikeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageLikeController.h; sourceTree = "<group>"; };
+		E31D253A1DED70AC00F702EE /* MessageLikeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageLikeController.m; sourceTree = "<group>"; };
+		E31D253C1DED70CE00F702EE /* MessageMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageMessageController.h; sourceTree = "<group>"; };
+		E31D253D1DED70CE00F702EE /* MessageMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageMessageController.m; sourceTree = "<group>"; };
+		E31D253F1DED739200F702EE /* MessageLikeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageLikeCell.h; sourceTree = "<group>"; };
+		E31D25401DED739200F702EE /* MessageLikeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageLikeCell.m; sourceTree = "<group>"; };
+		E31D25421DEDA2B400F702EE /* MeWriteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeWriteController.h; sourceTree = "<group>"; };
+		E31D25431DEDA2B400F702EE /* MeWriteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeWriteController.m; sourceTree = "<group>"; };
+		E31D25451DEDA2C000F702EE /* MeFollowedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeFollowedController.h; sourceTree = "<group>"; };
+		E31D25461DEDA2C000F702EE /* MeFollowedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeFollowedController.m; sourceTree = "<group>"; };
+		E31D25481DEDA2D500F702EE /* MeCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeCollectionController.h; sourceTree = "<group>"; };
+		E31D25491DEDA2D500F702EE /* MeCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeCollectionController.m; sourceTree = "<group>"; };
+		E31D254B1DEDA2E500F702EE /* MeHistoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeHistoryController.h; sourceTree = "<group>"; };
+		E31D254C1DEDA2E500F702EE /* MeHistoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeHistoryController.m; sourceTree = "<group>"; };
+		E31D254E1DEDA30200F702EE /* MeDraftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeDraftController.h; sourceTree = "<group>"; };
+		E31D254F1DEDA30200F702EE /* MeDraftController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeDraftController.m; sourceTree = "<group>"; };
+		E31D25511DEDA31900F702EE /* MeSetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeSetController.h; sourceTree = "<group>"; };
+		E31D25521DEDA31900F702EE /* MeSetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeSetController.m; sourceTree = "<group>"; };
+		E31D25541DEDA5DF00F702EE /* MeNightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeNightCell.h; sourceTree = "<group>"; };
+		E31D25551DEDA5DF00F702EE /* MeNightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeNightCell.m; sourceTree = "<group>"; };
+		E3272B591DE6B7F600C4971D /* MeEditInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeEditInfoController.h; sourceTree = "<group>"; };
+		E3272B5A1DE6B7F600C4971D /* MeEditInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeEditInfoController.m; sourceTree = "<group>"; };
 		E3523C321DDDD8CD00CBED52 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		E3523C361DDDD8FB00CBED52 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
 		E3523C371DDDD8FB00CBED52 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
@@ -201,6 +245,16 @@
 		E3E218311DE48BB700924DD4 /* DiscoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverController.m; sourceTree = "<group>"; };
 		E3E218351DE4972500924DD4 /* DiscoverCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverCell.h; sourceTree = "<group>"; };
 		E3E218361DE4972500924DD4 /* DiscoverCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverCell.m; sourceTree = "<group>"; };
+		E3E2C9021DE6E07100543412 /* MeEditInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeEditInfoCell.h; sourceTree = "<group>"; };
+		E3E2C9031DE6E07100543412 /* MeEditInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeEditInfoCell.m; sourceTree = "<group>"; };
+		E3E2C9071DE6E37200543412 /* MeEditInfoSignCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeEditInfoSignCell.h; sourceTree = "<group>"; };
+		E3E2C9081DE6E37200543412 /* MeEditInfoSignCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeEditInfoSignCell.m; sourceTree = "<group>"; };
+		E3E2C90A1DE6EA5400543412 /* MeEditInfoNickNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeEditInfoNickNameCell.h; sourceTree = "<group>"; };
+		E3E2C90B1DE6EA5400543412 /* MeEditInfoNickNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeEditInfoNickNameCell.m; sourceTree = "<group>"; };
+		E3E2C9111DE72B7500543412 /* MessageFansController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageFansController.h; sourceTree = "<group>"; };
+		E3E2C9121DE72B7500543412 /* MessageFansController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageFansController.m; sourceTree = "<group>"; };
+		E3E2C9141DE72E6E00543412 /* MessageFansCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageFansCell.h; sourceTree = "<group>"; };
+		E3E2C9151DE72E6E00543412 /* MessageFansCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageFansCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +321,14 @@
 			children = (
 				E3523C3E1DDDE23B00CBED52 /* MessageController.h */,
 				E3523C3F1DDDE23B00CBED52 /* MessageController.m */,
+				E3E2C9111DE72B7500543412 /* MessageFansController.h */,
+				E3E2C9121DE72B7500543412 /* MessageFansController.m */,
+				E31D25331DED678800F702EE /* MessageCommentController.h */,
+				E31D25341DED678800F702EE /* MessageCommentController.m */,
+				E31D25391DED70AC00F702EE /* MessageLikeController.h */,
+				E31D253A1DED70AC00F702EE /* MessageLikeController.m */,
+				E31D253C1DED70CE00F702EE /* MessageMessageController.h */,
+				E31D253D1DED70CE00F702EE /* MessageMessageController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,6 +353,12 @@
 			children = (
 				E3523C361DDDD8FB00CBED52 /* MessageCell.h */,
 				E3523C371DDDD8FB00CBED52 /* MessageCell.m */,
+				E3E2C9141DE72E6E00543412 /* MessageFansCell.h */,
+				E3E2C9151DE72E6E00543412 /* MessageFansCell.m */,
+				E31D25361DED6A9800F702EE /* MessageCommentCell.h */,
+				E31D25371DED6A9800F702EE /* MessageCommentCell.m */,
+				E31D253F1DED739200F702EE /* MessageLikeCell.h */,
+				E31D25401DED739200F702EE /* MessageLikeCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -609,6 +677,20 @@
 			children = (
 				E3BE3E7E1DE3D8B0008100B2 /* MeController.h */,
 				E3BE3E7F1DE3D8B0008100B2 /* MeController.m */,
+				E3272B591DE6B7F600C4971D /* MeEditInfoController.h */,
+				E3272B5A1DE6B7F600C4971D /* MeEditInfoController.m */,
+				E31D25421DEDA2B400F702EE /* MeWriteController.h */,
+				E31D25431DEDA2B400F702EE /* MeWriteController.m */,
+				E31D25451DEDA2C000F702EE /* MeFollowedController.h */,
+				E31D25461DEDA2C000F702EE /* MeFollowedController.m */,
+				E31D25481DEDA2D500F702EE /* MeCollectionController.h */,
+				E31D25491DEDA2D500F702EE /* MeCollectionController.m */,
+				E31D254B1DEDA2E500F702EE /* MeHistoryController.h */,
+				E31D254C1DEDA2E500F702EE /* MeHistoryController.m */,
+				E31D254E1DEDA30200F702EE /* MeDraftController.h */,
+				E31D254F1DEDA30200F702EE /* MeDraftController.m */,
+				E31D25511DEDA31900F702EE /* MeSetController.h */,
+				E31D25521DEDA31900F702EE /* MeSetController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -635,6 +717,14 @@
 				E3BE3E821DE3DB72008100B2 /* MeCell.m */,
 				E3BE3E841DE3DB83008100B2 /* MeInfoCell.h */,
 				E3BE3E851DE3DB83008100B2 /* MeInfoCell.m */,
+				E31D25541DEDA5DF00F702EE /* MeNightCell.h */,
+				E31D25551DEDA5DF00F702EE /* MeNightCell.m */,
+				E3E2C9021DE6E07100543412 /* MeEditInfoCell.h */,
+				E3E2C9031DE6E07100543412 /* MeEditInfoCell.m */,
+				E3E2C9071DE6E37200543412 /* MeEditInfoSignCell.h */,
+				E3E2C9081DE6E37200543412 /* MeEditInfoSignCell.m */,
+				E3E2C90A1DE6EA5400543412 /* MeEditInfoNickNameCell.h */,
+				E3E2C90B1DE6EA5400543412 /* MeEditInfoNickNameCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -969,34 +1059,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3A7E2EC1DE2B8610046323D /* CastsModel.m in Sources */,
+				E31D25561DEDA5DF00F702EE /* MeNightCell.m in Sources */,
 				E3A7E2E31DE2A8BD0046323D /* AkaModel.m in Sources */,
 				E39C86781DE1A9C000C9A115 /* BaseTabBarController.m in Sources */,
 				E3BE3E831DE3DB72008100B2 /* MeCell.m in Sources */,
+				E3E2C9091DE6E37200543412 /* MeEditInfoSignCell.m in Sources */,
 				E39C86631DE177BB00C9A115 /* HomePageController.m in Sources */,
+				E3272B5B1DE6B7F600C4971D /* MeEditInfoController.m in Sources */,
+				E31D25381DED6A9800F702EE /* MessageCommentCell.m in Sources */,
 				E379FDDF1DDB3C2D001ECB10 /* AppDelegate.m in Sources */,
 				E3A7E2D41DE298270046323D /* UserModel.m in Sources */,
 				E3A7E2D71DE29C150046323D /* MovieModel.m in Sources */,
 				E3BE3E801DE3D8B0008100B2 /* MeController.m in Sources */,
 				E39C86711DE1A3A500C9A115 /* HomePageLeftCell.m in Sources */,
 				E3E218321DE48BB700924DD4 /* DiscoverController.m in Sources */,
+				E31D25411DED739200F702EE /* MessageLikeCell.m in Sources */,
+				E3E2C9041DE6E07100543412 /* MeEditInfoCell.m in Sources */,
 				E3523C381DDDD8FB00CBED52 /* MessageCell.m in Sources */,
+				E31D253E1DED70CE00F702EE /* MessageMessageController.m in Sources */,
+				E3E2C9131DE72B7500543412 /* MessageFansController.m in Sources */,
 				E3BE3E6B1DE32EB2008100B2 /* HPCellModel.m in Sources */,
 				E3A7E2E01DE29D660046323D /* LanguageModel.m in Sources */,
 				E3A7E2F21DE2B8C20046323D /* RatingModel.m in Sources */,
+				E3E2C9161DE72E6E00543412 /* MessageFansCell.m in Sources */,
 				E3A7E2E61DE2B7BC0046323D /* GenreModel.m in Sources */,
+				E31D254A1DEDA2D500F702EE /* MeCollectionController.m in Sources */,
+				E3E2C90C1DE6EA5400543412 /* MeEditInfoNickNameCell.m in Sources */,
 				E3BE3E661DE2C55A008100B2 /* ModelTest.m in Sources */,
 				E3A7E2DA1DE29CDE0046323D /* ImageModel.m in Sources */,
 				E39C866E1DE1A39400C9A115 /* HomePageRightCell.m in Sources */,
 				E39C86771DE1A9C000C9A115 /* BaseNavigationController.m in Sources */,
+				E31D25501DEDA30200F702EE /* MeDraftController.m in Sources */,
 				E3853A171DE43FD40025A385 /* UITabBar+Badge.m in Sources */,
+				E31D253B1DED70AC00F702EE /* MessageLikeController.m in Sources */,
+				E31D254D1DEDA2E500F702EE /* MeHistoryController.m in Sources */,
 				E3E218371DE4972500924DD4 /* DiscoverCell.m in Sources */,
 				E379FDDC1DDB3C2D001ECB10 /* main.m in Sources */,
+				E31D25351DED678800F702EE /* MessageCommentController.m in Sources */,
 				E3523C401DDDE23B00CBED52 /* MessageController.m in Sources */,
 				E3BE3E6E1DE33323008100B2 /* ReplyModel.m in Sources */,
 				E39C866B1DE19F2400C9A115 /* HPCarouselModel.m in Sources */,
 				E3BE3E861DE3DB83008100B2 /* MeInfoCell.m in Sources */,
+				E31D25441DEDA2B400F702EE /* MeWriteController.m in Sources */,
 				E3A7E2E91DE2B7FA0046323D /* CountryModel.m in Sources */,
 				E3A7E2EF1DE2B8990046323D /* DirectorModel.m in Sources */,
+				E31D25531DEDA31900F702EE /* MeSetController.m in Sources */,
+				E31D25471DEDA2C000F702EE /* MeFollowedController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

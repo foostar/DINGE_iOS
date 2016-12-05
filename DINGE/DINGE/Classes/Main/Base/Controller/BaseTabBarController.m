@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tabBar.translucent = NO;
     // 去掉tabbar黑线并设置背景颜色
     [[UITabBar appearance] setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithHexString:MainColor]]];
     [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];

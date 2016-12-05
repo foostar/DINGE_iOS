@@ -10,6 +10,7 @@ target 'DINGE' do
   pod 'YYKit', '~> 1.0.7'
   pod 'SDCycleScrollView','~> 1.65'
   pod 'SDAutoLayout', '~> 2.1.7'
+  pod 'FDFullscreenPopGesture', '~> 1.1'
 
   target 'DINGETests' do
     inherit! :search_paths

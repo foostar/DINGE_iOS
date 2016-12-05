@@ -9,12 +9,16 @@
 #import "MeController.h"
 #import "MeInfoCell.h"
 #import "MeCell.h"
+#import "MeNightCell.h"
+#import "MeEditInfoController.h"
 
 @interface MeController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) NSArray *dataArray;
+
+@property (strong, nonatomic) NSArray *controllerNameArray;
 
 @end
 
@@ -43,10 +47,17 @@
                          @{@"icon":@"me_collection",@"title":@"我收藏的"},
                          @{@"icon":@"me_history",@"title":@"浏览历史"},
                          @{@"icon":@"me_draft",@"title":@"草稿箱"}],
-  @[@{@"icon":@"me_set",@"title":@"设置"},
-    @{@"icon":@"me_night",@"title":@"夜间模式"}]];
+                       @[@{@"icon":@"me_set",@"title":@"设置"}]];
     }
     return _dataArray;
+}
+
+- (NSArray *)controllerNameArray {
+    if (!_controllerNameArray) {
+        _controllerNameArray = @[@[@"MeWriteController",@"MeFollowedController",@"MeCollectionController",@"MeHistoryController",@"MeDraftController"],
+              @[@"MeSetController"]];
+    }
+    return _controllerNameArray;
 }
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
@@ -61,7 +72,7 @@
         case 1:
             return [self.dataArray[0] count];
         case 2:
-            return [self.dataArray[1] count];
+            return 2;
         default:
             return 0;
     }
@@ -98,26 +109,40 @@
         MeInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MeInfoCell"];
         return cell;
     } else {
-        MeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MeCell"];
-        if (indexPath.section == 1) {
-            cell.iconImageView.image = [UIImage imageNamed:self.dataArray[0][indexPath.row][@"icon"]];
-            cell.titleLabel.text = self.dataArray[0][indexPath.row][@"title"];
+        if (indexPath.section == 2 && indexPath.row == 1) {
+            MeNightCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MeNightCell"];
+            return cell;
         } else {
-            cell.iconImageView.image = [UIImage imageNamed:self.dataArray[1][indexPath.row][@"icon"]];
-            cell.titleLabel.text = self.dataArray[1][indexPath.row][@"title"];
+            MeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MeCell"];
+            cell.iconImageView.image = [UIImage imageNamed:self.dataArray[0][indexPath.row][@"icon"]];
+            cell.titleLabel.text = self.dataArray[indexPath.section - 1][indexPath.row][@"title"];
+            return cell;
         }
-        return cell;
     }
 }
 
-/*
-#pragma mark - Navigation
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section != 0 ) {
+        // 夜间模式时return
+        if (indexPath.section == 2 && indexPath.row == 1) {
+            return;
+        }
+        UIViewController *vc =  [[UIStoryboard storyboardWithName:@"Me" bundle:nil] instantiateViewControllerWithIdentifier:self.controllerNameArray[indexPath.section - 1][indexPath.row]];
+        [self.navigationController showViewController:vc sender:nil];
+    }
+}
 
+
+#pragma mark - Navigation
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+//    if ([segue.identifier isEqualToString:@"ShowEditInfo"]) {
+//        MeEditInfoController *mEIVC = (MeEditInfoController *)[segue destinationViewController];
+//    }
 }
-*/
+
 
 @end

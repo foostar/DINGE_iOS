@@ -28,22 +28,23 @@
                                     <size key="itemSize" width="131" height="230"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="25" maxX="0.0" maxY="25"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DiscoverCell" id="c5a-ot-U82" customClass="DiscoverCell">
-                                        <rect key="frame" x="0.0" y="25" width="131" height="230"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="131" height="230"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="131" height="230"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蝙蝠侠大战超人——正月黎明" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0t-Bt-sxI">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蝙蝠侠大战超人——正义黎明" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0t-Bt-sxI">
                                                     <rect key="frame" x="0.0" y="185" width="131" height="45"/>
+                                                    <color key="backgroundColor" red="0.99215686270000003" green="0.98823529409999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="3Al-jb-0UV"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -60,9 +61,14 @@
                                             <constraint firstAttribute="trailing" secondItem="rui-VP-KH5" secondAttribute="trailing" id="Eof-n9-zIc"/>
                                             <constraint firstItem="rui-VP-KH5" firstAttribute="top" secondItem="c5a-ot-U82" secondAttribute="top" id="Qk8-Ji-Kqe"/>
                                             <constraint firstItem="p0t-Bt-sxI" firstAttribute="top" secondItem="rui-VP-KH5" secondAttribute="bottom" id="YzY-yw-EoE"/>
+                                            <constraint firstItem="p0t-Bt-sxI" firstAttribute="top" secondItem="rui-VP-KH5" secondAttribute="bottom" id="bQA-MU-ME4"/>
                                             <constraint firstAttribute="trailing" secondItem="p0t-Bt-sxI" secondAttribute="trailing" id="sAj-Ns-ihM"/>
                                             <constraint firstAttribute="bottom" secondItem="p0t-Bt-sxI" secondAttribute="bottom" id="unP-S4-KdP"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="movieImageView" destination="rui-VP-KH5" id="epU-2Y-hqy"/>
+                                            <outlet property="movieNameLabel" destination="p0t-Bt-sxI" id="r7e-Tv-GdJ"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>

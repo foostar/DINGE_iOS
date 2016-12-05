@@ -30,6 +30,21 @@
     self.navigationBar.layer.shadowRadius = 2.5f;//阴影半径
 }
 
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    
+    if (self.viewControllers.count > 0) {
+        // 如果在堆栈控制器数量大于1 加返回按钮
+        if (self.viewControllers.count > 0) {
+            UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back"] style:UIBarButtonItemStyleDone target:self action:@selector(popViewControllerAnimated:)];
+            viewController.navigationItem.leftBarButtonItem = leftItem;
+            viewController.hidesBottomBarWhenPushed = YES;
+        } else {
+            viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] init];
+        }
+    }
+    [super pushViewController:viewController animated:animated];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

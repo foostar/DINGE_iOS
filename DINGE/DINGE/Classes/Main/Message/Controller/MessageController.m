@@ -9,12 +9,15 @@
 #import "MessageController.h"
 #import "MessageCell.h"
 #import "UITabBar+Badge.h"
+#import "MessageFansController.h"
 
 @interface MessageController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) NSArray *dataArray;
+
+@property (strong, nonatomic) NSArray *controllerNameArray;
 
 @end
 
@@ -50,6 +53,13 @@
     return _dataArray;
 }
 
+- (NSArray *)controllerNameArray {
+    if (!_controllerNameArray) {
+        _controllerNameArray = @[@"MessageCommentController",@"MessageMessageController",@"MessageLikeController",@"MessageFansController"];
+    }
+    return _controllerNameArray;
+}
+
 #pragma mark - UITableViewDataSource, UITableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -67,6 +77,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIViewController *vc =  [[UIStoryboard storyboardWithName:@"Message" bundle:nil] instantiateViewControllerWithIdentifier:self.controllerNameArray[indexPath.row]];
+    [self.navigationController showViewController:vc sender:nil];
 }
 
 @end

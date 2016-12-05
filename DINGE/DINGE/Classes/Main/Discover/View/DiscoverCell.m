@@ -8,6 +8,15 @@
 
 #import "DiscoverCell.h"
 
+@interface DiscoverCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *movieImageView;
+
+@property (weak, nonatomic) IBOutlet UILabel *movieNameLabel;
+
+
+@end
+
 @implementation DiscoverCell
 
 @end

@@ -9,15 +9,15 @@
 #import "DiscoverController.h"
 #import "DiscoverCell.h"
 
-static const CGFloat DiscoverCellWidth = 131.0f;
+static const CGFloat DiscoverCellWidth = 130.0f;
 static const CGFloat DiscoverCellHeight = 230.0f;
-static const CGFloat MINIMUM_ITEM_SPACE = 14.0f;
+static const CGFloat MINIMUM_ITEM_SPACE = 16.0f;
 static const CGFloat MINIMUM_LINE_SPACE = 0.0f;
-static const CGFloat SectionTopAndBottomSpace = 25.0f;
+static const CGFloat SectionTopAndBottomSpace = 22.0f;
 static const CGFloat SectionLeftAndRightSpace = 22.0f;
 
 
-@interface DiscoverController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface DiscoverController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
@@ -57,6 +57,10 @@ static const CGFloat SectionLeftAndRightSpace = 22.0f;
     return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+}
+
+#pragma mark - UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     return CGSizeMake(RealWidth(DiscoverCellWidth), RealHeight(DiscoverCellHeight));
 }
@@ -75,9 +79,6 @@ static const CGFloat SectionLeftAndRightSpace = 22.0f;
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
     return MINIMUM_LINE_SPACE;
 }
-
-//- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-//}
 
 /*
 #pragma mark - Navigation
