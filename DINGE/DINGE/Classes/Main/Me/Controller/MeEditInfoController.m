@@ -27,6 +27,7 @@ static const CGFloat HeaderViewHeight = 104.0f;
 
 @implementation MeEditInfoController
 
+#pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -39,36 +40,6 @@ static const CGFloat HeaderViewHeight = 104.0f;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - lazy
-- (UIView *)headerView {
-    if (!_headerView) {
-        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, HeaderViewHeight)];
-        _headerView.backgroundColor = [UIColor colorWithHexString:@"FDFDF9"];
-        [_headerView setLayerShadow:[UIColor colorWithHexString:ShadowsColor] offset:CGSizeMake(0.0f, 1.0f) radius:2.5];
-        _headerView.layer.shadowOpacity = 0.33f;
-        [_headerView addSubview:self.avatarView];
-    }
-    return _headerView;
-}
-
-- (UIImageView *)avatarView {
-    if (!_avatarView) {
-        _avatarView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
-        _avatarView.center = _headerView.center;
-        _avatarView.backgroundColor = [UIColor cyanColor];
-        _avatarView.layer.masksToBounds = YES;
-        _avatarView.layer.cornerRadius = 30;
-    }
-    return _avatarView;
-}
-
-- (NSArray *)titleArray {
-    if (!_titleArray) {
-        _titleArray = @[@"昵称",@"签名",@"性别",@"城市",@"生日"];
-    }
-    return _titleArray;
 }
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
@@ -103,6 +74,36 @@ static const CGFloat HeaderViewHeight = 104.0f;
         cell.titleLabel.text = self.titleArray[indexPath.row];
         return cell;
     }
+}
+
+#pragma mark - getter
+- (UIView *)headerView {
+    if (!_headerView) {
+        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, HeaderViewHeight)];
+        _headerView.backgroundColor = [UIColor colorWithHexString:@"FDFDF9"];
+        [_headerView setLayerShadow:[UIColor colorWithHexString:ShadowsColor] offset:CGSizeMake(0.0f, 1.0f) radius:2.5];
+        _headerView.layer.shadowOpacity = 0.33f;
+        [_headerView addSubview:self.avatarView];
+    }
+    return _headerView;
+}
+
+- (UIImageView *)avatarView {
+    if (!_avatarView) {
+        _avatarView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
+        _avatarView.center = _headerView.center;
+        _avatarView.backgroundColor = [UIColor cyanColor];
+        _avatarView.layer.masksToBounds = YES;
+        _avatarView.layer.cornerRadius = 30;
+    }
+    return _avatarView;
+}
+
+- (NSArray *)titleArray {
+    if (!_titleArray) {
+        _titleArray = @[@"昵称",@"签名",@"性别",@"城市",@"生日"];
+    }
+    return _titleArray;
 }
 
 /*

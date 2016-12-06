@@ -12,8 +12,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    _redPoint.layer.masksToBounds = YES;
-    _redPoint.layer.cornerRadius = _redPoint.height / 2.0f;
+    self.redPoint.layer.masksToBounds = YES;
+    self.redPoint.layer.cornerRadius = _redPoint.height / 2.0f;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

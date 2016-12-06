@@ -31,13 +31,14 @@ static CGFloat const HeaderViewHeight = 230;
 
 @implementation HomePageController
 
+#pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.navBarBgImageView.alpha = 0;
     self.navigationItem.titleView = self.navTitleLabel;
-    _navTitleLabel.hidden = YES;
-    _navTitleLabel.alpha = 0;
+    self.navTitleLabel.hidden = YES;
+    self.navTitleLabel.alpha = 0;
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
@@ -47,39 +48,6 @@ static CGFloat const HeaderViewHeight = 230;
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-}
-
-#pragma mark - lazy
-- (UIView *)navBarBgImageView {
-    if (!_navBarBgImageView) {
-        _navBarBgImageView = self.navigationController.navigationBar.subviews.firstObject;
-    }
-    return _navBarBgImageView;
-}
-
-- (UILabel *)navTitleLabel {
-    if (!_navTitleLabel) {
-        _navTitleLabel = [[UILabel alloc] init];
-        _navTitleLabel.text = @"首页";
-        _navTitleLabel.textColor = [UIColor colorWithHexString:NavTitleColor];
-        _navTitleLabel.font = [UIFont fontWithName:NavTitleFont size:NavTitleFontNumber];
-        _navTitleLabel.textAlignment = NSTextAlignmentCenter;
-        [_navTitleLabel sizeToFit];
-    }
-    return _navTitleLabel;
-}
-
-- (SDCycleScrollView *)headerView {
-    if (!_headerView) {
-        _headerView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREENWIDTH, RealHeight(HeaderViewHeight)) delegate:self placeholderImage:nil];
-        _headerView.pageControlDotSize = CGSizeMake(6.0f, 6.0f);
-        _headerView.pageDotColor = [UIColor colorWithHexString:@"2e323c"];
-        // 本地图片
-        _headerView.localizationImageNamesGroup = @[@"HP_first",@"HP_second",@"HP_third"];
-        // 网络图片
-//        _headerView.imageURLStringsGroup = 
-    }
-    return _headerView;
 }
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
@@ -112,16 +80,49 @@ static CGFloat const HeaderViewHeight = 230;
     CGFloat maxAlphaOffset = RealHeight(HeaderViewHeight) - 64;
     CGFloat offset = scrollView.contentOffset.y;
     if (offset > 0) {
-        _navTitleLabel.hidden = NO;
+        self.navTitleLabel.hidden = NO;
     }
     CGFloat alpha = (offset - minAlphaOffset) / (maxAlphaOffset - minAlphaOffset);
-    _navBarBgImageView.alpha = alpha;
-    _navTitleLabel.alpha = alpha;
+    self.navBarBgImageView.alpha = alpha;
+    self.navTitleLabel.alpha = alpha;
 }
 
 #pragma mark - SDCycleScrollViewDelegate 
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index {
     NSLog(@"%ld", index);
+}
+
+#pragma mark - getter
+- (UIView *)navBarBgImageView {
+    if (!_navBarBgImageView) {
+        _navBarBgImageView = self.navigationController.navigationBar.subviews.firstObject;
+    }
+    return _navBarBgImageView;
+}
+
+- (UILabel *)navTitleLabel {
+    if (!_navTitleLabel) {
+        _navTitleLabel = [[UILabel alloc] init];
+        _navTitleLabel.text = @"首页";
+        _navTitleLabel.textColor = [UIColor colorWithHexString:NavTitleColor];
+        _navTitleLabel.font = [UIFont fontWithName:NavTitleFont size:NavTitleFontNumber];
+        _navTitleLabel.textAlignment = NSTextAlignmentCenter;
+        [_navTitleLabel sizeToFit];
+    }
+    return _navTitleLabel;
+}
+
+- (SDCycleScrollView *)headerView {
+    if (!_headerView) {
+        _headerView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREENWIDTH, RealHeight(HeaderViewHeight)) delegate:self placeholderImage:nil];
+        _headerView.pageControlDotSize = CGSizeMake(6.0f, 6.0f);
+        _headerView.pageDotColor = [UIColor colorWithHexString:@"2e323c"];
+        // 本地图片
+        _headerView.localizationImageNamesGroup = @[@"HP_first",@"HP_second",@"HP_third"];
+        // 网络图片
+        //        _headerView.imageURLStringsGroup =
+    }
+    return _headerView;
 }
 
 @end

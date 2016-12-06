@@ -24,6 +24,7 @@
 
 @implementation MeController
 
+#pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"我的";
@@ -37,27 +38,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - lazy
-- (NSArray *)dataArray {
-    if (!_dataArray) {
-        _dataArray = @[@[@{@"icon":@"me_write",@"title":@"我的影评"},
-                         @{@"icon":@"me_followed",@"title":@"我关注的"},
-                         @{@"icon":@"me_collection",@"title":@"我收藏的"},
-                         @{@"icon":@"me_history",@"title":@"浏览历史"},
-                         @{@"icon":@"me_draft",@"title":@"草稿箱"}],
-                       @[@{@"icon":@"me_set",@"title":@"设置"}]];
-    }
-    return _dataArray;
-}
-
-- (NSArray *)controllerNameArray {
-    if (!_controllerNameArray) {
-        _controllerNameArray = @[@[@"MeWriteController",@"MeFollowedController",@"MeCollectionController",@"MeHistoryController",@"MeDraftController"],
-              @[@"MeSetController"]];
-    }
-    return _controllerNameArray;
 }
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
@@ -130,6 +110,27 @@
         UIViewController *vc =  [[UIStoryboard storyboardWithName:@"Me" bundle:nil] instantiateViewControllerWithIdentifier:self.controllerNameArray[indexPath.section - 1][indexPath.row]];
         [self.navigationController showViewController:vc sender:nil];
     }
+}
+
+#pragma mark - getter
+- (NSArray *)dataArray {
+    if (!_dataArray) {
+        _dataArray = @[@[@{@"icon":@"me_write",@"title":@"我的影评"},
+                         @{@"icon":@"me_followed",@"title":@"我关注的"},
+                         @{@"icon":@"me_collection",@"title":@"我收藏的"},
+                         @{@"icon":@"me_history",@"title":@"浏览历史"},
+                         @{@"icon":@"me_draft",@"title":@"草稿箱"}],
+                       @[@{@"icon":@"me_set",@"title":@"设置"}]];
+    }
+    return _dataArray;
+}
+
+- (NSArray *)controllerNameArray {
+    if (!_controllerNameArray) {
+        _controllerNameArray = @[@[@"MeWriteController",@"MeFollowedController",@"MeCollectionController",@"MeHistoryController",@"MeDraftController"],
+                                 @[@"MeSetController"]];
+    }
+    return _controllerNameArray;
 }
 
 

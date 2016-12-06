@@ -34,8 +34,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    _userAvatarView.layer.masksToBounds = YES;
-    _userAvatarView.layer.cornerRadius = _userAvatarView.height / 2.0f;
+    self.userAvatarView.layer.masksToBounds = YES;
+    self.userAvatarView.layer.cornerRadius = _userAvatarView.height / 2.0f;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

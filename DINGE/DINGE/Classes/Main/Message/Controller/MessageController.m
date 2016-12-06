@@ -23,6 +23,7 @@
 
 @implementation MessageController
 
+#pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -30,7 +31,7 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    _tableView.tableFooterView = [[UIView alloc] init];
+    self.tableView.tableFooterView = [[UIView alloc] init];
     
     // 如果有新消息显示
 //    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:1 inSection:0];
@@ -40,24 +41,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-}
-
-#pragma mark - lazy
-- (NSArray *)dataArray {
-    if (!_dataArray) {
-        _dataArray = @[@{@"icon":@"message_comment",@"title":@"评论"},
-                       @{@"icon":@"message_message",@"title":@"私信"},
-                       @{@"icon":@"message_like",@"title":@"喜欢"},
-                       @{@"icon":@"message_fans",@"title":@"粉丝"}];
-    }
-    return _dataArray;
-}
-
-- (NSArray *)controllerNameArray {
-    if (!_controllerNameArray) {
-        _controllerNameArray = @[@"MessageCommentController",@"MessageMessageController",@"MessageLikeController",@"MessageFansController"];
-    }
-    return _controllerNameArray;
 }
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
@@ -79,6 +62,24 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIViewController *vc =  [[UIStoryboard storyboardWithName:@"Message" bundle:nil] instantiateViewControllerWithIdentifier:self.controllerNameArray[indexPath.row]];
     [self.navigationController showViewController:vc sender:nil];
+}
+
+#pragma mark - getter
+- (NSArray *)dataArray {
+    if (!_dataArray) {
+        _dataArray = @[@{@"icon":@"message_comment",@"title":@"评论"},
+                       @{@"icon":@"message_message",@"title":@"私信"},
+                       @{@"icon":@"message_like",@"title":@"喜欢"},
+                       @{@"icon":@"message_fans",@"title":@"粉丝"}];
+    }
+    return _dataArray;
+}
+
+- (NSArray *)controllerNameArray {
+    if (!_controllerNameArray) {
+        _controllerNameArray = @[@"MessageCommentController",@"MessageMessageController",@"MessageLikeController",@"MessageFansController"];
+    }
+    return _controllerNameArray;
 }
 
 @end

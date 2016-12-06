@@ -27,6 +27,7 @@ static const CGFloat SectionLeftAndRightSpace = 22.0f;
 
 @implementation DiscoverController
 
+#pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -36,15 +37,6 @@ static const CGFloat SectionLeftAndRightSpace = 22.0f;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - private
-- (void)setNavTitleView {
-    UIImageView *titleView = [[UIImageView alloc] init];
-    UIImage *image = [UIImage imageNamed:@"discover_logo"];
-    titleView.image = [image imageByTintColor:[UIColor colorWithHexString:NavTitleColor]];
-    [titleView sizeToFit];
-    self.navigationItem.titleView = titleView;
 }
 
 #pragma mark - UICollectionViewDataSource, UICollectionViewDelegate
@@ -78,6 +70,15 @@ static const CGFloat SectionLeftAndRightSpace = 22.0f;
 // 两行之间的最小间距
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
     return MINIMUM_LINE_SPACE;
+}
+
+#pragma mark - private
+- (void)setNavTitleView {
+    UIImageView *titleView = [[UIImageView alloc] init];
+    UIImage *image = [UIImage imageNamed:@"discover_logo"];
+    titleView.image = [image imageByTintColor:[UIColor colorWithHexString:NavTitleColor]];
+    [titleView sizeToFit];
+    self.navigationItem.titleView = titleView;
 }
 
 /*
